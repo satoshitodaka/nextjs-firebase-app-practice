@@ -89,7 +89,7 @@ export default function UserShow() {
       )}
       <div className="row justify-content-center mb-3">
         <div className="col-12 col-md-6">
-        <form onSubmit={onSubmit}>
+          <form onSubmit={onSubmit}>
             <textarea
               className="form-control"
               placeholder="おげんきですか？"
