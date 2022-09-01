@@ -5,9 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "now-build": "cp canvas_lib64/*so.1 node_modules/canvas/build/Release/ && yarn build",
     "start": "next start",
-    "lint": "next lint",
-    "now-build": "cp canvas_lib64/*so.1 node_modules/canvas/build/Release/ && yarn build"
+    "lint": "next lint"
   },
   "dependencies": {
     "bootstrap": "^5.2.0",
