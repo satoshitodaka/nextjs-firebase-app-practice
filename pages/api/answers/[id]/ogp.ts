@@ -34,7 +34,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   context.drawImage(backgroundImage, 0, 0, width, height)
   
   // テキストの描画
-  context.font = '20px ipaexp'
+  context.font = '20px ipaexg'
   context.fillStyle = '#424242'
   context.textAlign = 'center'
   context.textBaseline = 'middle'
