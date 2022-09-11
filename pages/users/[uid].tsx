@@ -12,6 +12,7 @@ import {
   serverTimestamp,
 } from 'firebase/firestore'
 import { toast } from 'react-toastify';
+import Link from 'next/dist/client/link' 
 
 type Query = {
   uid: string
@@ -110,6 +111,15 @@ export default function UserShow() {
               )}
             </div>
           </form>
+          <div>
+            {user && (
+              <p>
+                <Link href="/users/me">
+                  <a className="btn btn-link">自分もみんなに質問してもらおう！</a>
+                </Link>
+              </p>
+            )}
+          </div>
         </div>
       </div>
     </Layout>
